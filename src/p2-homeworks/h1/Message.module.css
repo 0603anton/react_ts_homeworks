@@ -1,3 +1,46 @@
 .message {
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: fit-content;
+    padding: 8px;
+    margin: 15px;
 
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    align-self: end;
+}
+.text{
+    border-radius: 15px 15px 15px 0px;
+    margin: 10px 10px 10px 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+
+    min-width: 300px;
+    position: relative;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(40px at top left, transparent 50%, rgba(0, 0, 0, 1) 0) no-repeat right bottom;
+}
+
+.time{
+    align-self: end;
+    color: rgba(255,255,255,0.8);
 }
